@@ -24,6 +24,7 @@ int main(int argc, char *argv[]) {
     pthread_create(&threadId1, NULL, myThreadFunc, NULL);
     pthread_create(&threadId2, NULL, myThreadFunc1, NULL);
     sleep(1);
+//    pthread_join(threadId2, NULL);
     printf("This is the main thread\n");
 
     return (0);
